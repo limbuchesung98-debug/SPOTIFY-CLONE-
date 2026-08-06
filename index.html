@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" class="logo">
+      <div class="icon-circle">
+        <i class="fas fa-home home-icon"></i>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="What do you want to play?">
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="nav-link">Premium</a>
+      <a href="#" class="nav-link">Support</a>
+      <a href="#" class="nav-link">Download</a>
+      <span class="divider">|</span>
+      <a href="#" class="nav-link">Sign up</a>
+      <a href="#" class="login-btn">Log in</a>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <main>
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="library-header">
+        <div class="library-title">
+          <i class="fas fa-book-open"></i>
+          <span>Your Library</span>
+        </div>
+        <button class="create-btn" title="Create Playlist">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <!-- Import Music Banner -->
+      <div class="sidebar-card import-banner">
+        <button class="banner-close" title="Dismiss">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="card-text">
+          <h3 class="card-title">Import your music from other apps</h3>
+          <p class="card-subtitle">Bring your playlists, songs and artists.</p>
+        </div>
+        <button class="card-btn">Import library</button>
+        
+        <div class="banner-icon">
+          <i class="fab fa-spotify"></i>
+        </div>
+      </div>
+
+      <!-- Create Playlist Card -->
+      <div class="sidebar-card">
+        <h3 class="card-title">Create your first playlist</h3>
+        <p class="card-subtitle">It's easy, we'll help you</p>
+        <button class="card-btn">Create playlist</button>
+      </div>
+
+      <!-- Podcasts Card -->
+      <div class="sidebar-card">
+        <h3 class="card-title">Let's find some podcasts to follow</h3>
+        <p class="card-subtitle">We'll keep you updated on new episodes</p>
+        <button class="card-btn">Browse podcasts</button>
+      </div>
+    </aside>
+
+    <!-- Right Main Content Area -->
+    <div class="main-content">
+      
+      <!-- Section 1: Trending Songs -->
+      <section class="content-section">
+        <h2>Trending Songs</h2>
+        <div class="card-grid">
+          
+          <a href="https://open.spotify.com/track/7M4LE6WoOiPff3l38XcxWs" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b27321eb3842d500d4f66ed85121" alt="Met Tonight">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Met Tonight</h3>
+            <p>Zayn Malik</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/5NQB1edfSkseL6nOo3u5yn" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b273faa33c207cd496f10184c219" alt="Ma Mare Pani">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Ma Mare Pani</h3>
+            <p>SWAR</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/2ZF1vvsb0GSy6FLVoImOEG" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a3a52eae2c34350ad2df18963d" alt="Hamro Maya">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Hamro Maya</h3>
+            <p>The Edge Band</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/0GMROiIGrqJfDZvIQ4mTMh" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b273c5f9838d70b1172b8294b93b" alt="Yo Hawalai">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Yo Hawalai</h3>
+            <p>Bikki Gurung</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/0DpUQ3mpAGy3bYsEKVy6t5" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b273a0b110307ee3dc10a74e3562" alt="Barsaat">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Barsaat</h3>
+            <p>Banjaare, Roni</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/4W7hOkvcsyArvndS8aZfNk" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a34f7a9e2cce041baab57c68df" alt="Maili">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Maili</h3>
+            <p>Ankita Pun</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/5wW5hXMeggFWaL1nypSG5F" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b27323fd47a56a71cb1bf5e73911" alt="Chill Ma">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Chill Ma</h3>
+            <p>Jamesy</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/2V82Ac3NzXJ3YLp7hi0KfN" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b2738df6caeb0c0e34b4529a2d18" alt="Mero Prem">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Mero Prem</h3>
+            <p>AXIX</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/3hUxzQpSfdDqwM3ZTFQY0K" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc" alt="August">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>August</h3>
+            <p>Taylor Swift</p>
+          </a>
+
+        </div>
+      </section>  
+
+      <!-- Section 2: Popular Artists -->
+      <section class="content-section">
+        <h2>Popular Artists</h2>
+        <div class="card-grid">
+          
+          <a href="https://open.spotify.com/artist/1fzFGucHkW9lOqVPSrKz7q" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://yt3.googleusercontent.com/Q8EMMTdan_z69fn6QulG5Vq_U9ysWJp8U3fHaSb65bk8h22uTWMPgB8ib8mbtyeWu2mthTNi=s160-c-k-c0x00ffffff-no-rj" alt="The Edge Band">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>The Edge Band</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/user/zaynmalikmusic" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67757000004cf8dca6628d1c82d4fe0b196757" alt="Zayn Malik">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Zayn Malik</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/6So94AgQzV91d8k5xWb6wU" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a3d07bf86054213ae8844575c1" alt="Tribal Rain">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Tribal Rain</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67757000004cf8b583d7b49151784a4f253bb2" alt="Billie Eilish">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Billie Eilish</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67757000004cf84b74c8a9fddf875c7fe4e53b" alt="Lana Del Rey">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Lana Del Rey</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/2RKdw2GauRzRwxTvOZ40By" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab6761610000939bac3ad0c726032e5f0ec542ed" alt="Ankita Pun">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Ankita Pun</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/5H4yInM5zmHqpKIoMNAx4r" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c000097acd1bb2e07b124e31bd0b1e13a" alt="Central Cee">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Central Cee</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/4Kxlr1PRlDKEB0ekOCyHgX" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab6761610000f178597a4257d0022e2ac837fa7d" alt="Big Bang">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Big Bang</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/6udveWUgX4vu75FF0DTrXV" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab6761610000e5eb7418a76d26fdc76f7b9ffa23" alt="Taeyang">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Taeyang</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/3Ols8mMOUzTAbtPmkm7HTa" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab6761610000f17818f04d5aa82a62371e7afa55" alt="Albatross">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Albatross</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67757000004cf80db844ef250875b7f9ae3afd" alt="Nirvana">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Nirvana</h3>
+            <p>Artist</p>
+          </a>
+
+          <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank" class="card artist-card">
+            <div class="card-image-wrapper">
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab6761610000f17850defaf9fc059a1efc541f4c" alt="Guns N' Roses">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Guns N' Roses</h3>
+            <p>Artist</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Popular Albums and Singles -->
+      <section class="content-section">
+        <h2>Popular Albums and Singles</h2>
+        <div class="card-grid">
+
+          <a href="https://open.spotify.com/album/1EcFG49I5g9rMW2MNTUyzl" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b273711ae79575f8c0be58b1a594" alt="Mero Prayas">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Mero Prayas</h3>
+            <p>The Edge Band</p>
+          </a>
+
+          <a href="https://open.spotify.com/album/0ltjXTRTKIsPPxYfwwrk7H" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a338d577be8288cd639b635a6b" alt="BOOMERANG">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>BOOMERANG</h3>
+            <p>YABI THE G.O.A.T</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/3RaeLKFKE3SmNMkHgLvqpV" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a308511f0c9ea0ed972ad3113a" alt="Mercedes Benz">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Mercedes Benz</h3>
+            <p>Cobweb</p>
+          </a>
+
+          <a href="https://open.spotify.com/album/4Zbxc5lIj7TGJd4ONRdNnr" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b2730639b29245e10c7b47f9ef61" alt="Atti Bhayo">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Atti Bhayo</h3>
+            <p>Albatross</p>
+          </a>
+
+          <a href="https://open.spotify.com/album/4HyCUpWEhXpDoJH8GLKFRQ" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a39738f57d8aee49679c1c743d" alt="Sataha">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Sataha</h3>
+            <p>Sabin Rai</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/33XUHrCbrAW6me9ewdCZip" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b27310f5b59ee71a232bc0681445" alt="WAGWAN">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>WAGWAN</h3>
+            <p>Central Cee</p>
+          </a>
+
+          <a href="https://open.spotify.com/track/1DEP47DSavoNvpo7dWxRta" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000b273a7114e2e7e666db204fe2c02" alt="Eyes Nose Lips">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>Eyes Nose Lips</h3>
+            <p>Taeyang</p>
+          </a>
+
+          <a href="https://open.spotify.com/album/5amj9zNeZ3B2EdpBgXrOZ0" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://i.scdn.co/image/ab67616d0000e1a3b4c42ba7470503094d5a1c5a" alt="Mind Of Mine">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h3>MiNd Of MiNdd</h3>
+            <p>Zayn Malik</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Section 4: Popular Radio -->
+      <section class="content-section">
+        <h2>Popular Radio</h2>
+        <div class="card-grid">
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4zjceEdlBmPq" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/59kBqCjoUv2hZEKyeRucT6/en-GB" alt="Trishna Gurung Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With Trishna Gurung, ArtMandu, Kali Prasad Baskota and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4kUMJhUQXlnY" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1fzFGucHkW9lOqVPSrKz7q/en" alt="The Edge Band Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With Monkey Temple Nepal, Swar, AXIX and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4ACR94Uehq9H" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3sauLUNFUPvJVWIADSYTvZ/en" alt="Neetesh Jung Kunwar Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With Neetesh Jung Kunwar, Bartika Eam Rai, Kuma Sagar and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4vT4cO9647KY" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Z3yPo3SbczpDs4FpY9ixA/en" alt="Lil Jhola Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With Lil Jhola, ST MAN, YABI The G.O.A.T and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4qv8L9BV8NHp" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3Ols8mMOUzTAbtPmkm7HTa/en" alt="Albatross Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With AXIX, Rockheads, The Edge Band and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/4Ygzn74NxdgdxdZIlKL8CI" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://mosaic.scdn.co/300/ab67616d00001e02347805328d63bf4f6f4a2c2dab67616d00001e0286bcb788ed2f16a18415a76dab67616d00001e02e344512114018c5601f72bdaab67616d00001e02f7b12be2fbd3fe8e0ba18ab4" alt="Radio Nepal Classics">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>RADIO NEPAL Classics</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4vqXjPu7Hg0z" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt="Sachin-Jigar Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With Sachin-Jigar, Atif Aslam and more</p>
+          </a>
+
+          <a href="https://open.spotify.com/playlist/37i9dQZF1E4kMaJ1aGqkMS" target="_blank" class="card">
+            <div class="card-image-wrapper">
+              <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0pgcJf1JOhP3n3WbMlA4wu/en" alt="Sabin Rai Radio">
+              <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <p>With AXIX, Sabin Rai & The Pharaoh, The Edge Band and more</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Communities</h4>
+            <ul>
+              <li><a href="#">For Artists</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Investors</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Free Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Plans</h4>
+            <ul>
+              <li><a href="#">Premium Individual</a></li>
+              <li><a href="#">Premium Duo</a></li>
+              <li><a href="#">Premium Family</a></li>
+              <li><a href="#">Premium Student</a></li>
+              <li><a href="#">Spotify Free</a></li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Spotify Clone</p>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+<script src="script.js"></script>
+
+</body>
+</html>
